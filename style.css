@@ -1,0 +1,814 @@
+/* ==========================================================
+   Palette du CV LaTeX
+   ========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+
+:root {
+    --pagebg: #F9F4EC;
+    --sectcol: #9D82CC;
+    --bgcol: #7A5C46;
+    --softcol: #DDD3C7;
+    --accent: #EEA384;
+	--text-on-accent: #FFFFFF;
+}
+
+:root.dark {
+    --pagebg: #11112F;
+    --sectcol: #9385A8;
+    --bgcol: #D9DCE8;
+    --softcol: #444444;
+    --accent: #B97862;
+	--text-on-accent: #F0E6E0;
+
+}
+
+
+
+/* ==========================================================
+   Base
+   ========================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+	min-height: 100vh;
+	
+	display: flex;
+
+	flex-direction: column;
+
+    background: var(--pagebg);
+
+    color: var(--bgcol);
+
+    font-family: "Raleway", Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease;
+}
+
+main {
+
+	flex: 1;
+
+}
+
+footer {
+
+	margin-top: 40px;
+
+	padding: 20px 0;
+
+	border-top: 2px solid var(--softcol);
+
+	transition:
+		border-color O.5s ease;
+
+}
+
+.logos {
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	gap: 40px;
+
+}
+
+.logos img {
+
+	height: 65px;
+
+	width: auto;
+
+	transition: transform 0.25s ease;
+
+}
+
+.logos img:hover {
+
+	transform: scale(1.05);
+
+}
+
+/* ==========================================================
+   Bandeau supérieur
+   ========================================================== */
+
+
+#titre {
+
+    width: 80%;
+
+    min-width: 700px;
+
+    margin: 35px auto 20px auto;
+
+    padding: 25px;
+
+    background: var(--accent);
+
+    border-radius: 5px;
+
+    box-shadow: 0px 5px 15px rgba(122,92,70,0.18);
+
+}
+
+
+
+#boite {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+
+}
+
+
+
+#photo-aleatoire {
+
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid var(--pagebg);
+
+
+}
+
+
+#nom {
+
+    font-size: 55px;
+
+    font-weight: 800;
+
+    color: var(--text-on-accent);
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* ==========================================================
+   Navigation
+   ========================================================== */
+
+
+nav {
+
+    width: 80%;
+
+    min-width: 700px;
+
+    margin: auto;
+
+}
+
+
+
+nav ul {
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    list-style: none;
+
+}
+
+
+
+.bouton1 {
+
+    display: inline-block;
+
+    padding: 8px 25px;
+
+    background: var(--sectcol);
+
+    color: var(--text-on-accent);
+
+    border-radius: 3px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.bouton1:hover {
+
+    background: #8066B0;
+
+	color: var(--text-on-accent);
+
+    transform: translateY(-2px);
+
+}
+
+/* ==========================================================
+   Contenu
+   ========================================================== */
+
+
+.conteneur {
+
+    width: 80%;
+
+    min-width: 700px;
+
+    margin: 40px auto;
+
+}
+
+
+
+p {
+
+    text-align: justify;
+
+    margin-left: 15px;
+
+}
+
+
+
+/* ==========================================================
+   Sections façon CV
+   ========================================================== */
+
+
+h3 {
+
+    margin-top: 40px;
+
+    margin-bottom: 20px;
+
+
+    padding: 8px 15px;
+
+
+    background: var(--accent);
+
+
+    color: var(--text-on-accent);
+
+
+    font-size: 22px;
+
+
+    font-weight: 700;
+
+
+    border-radius: 2px;
+
+
+}
+
+
+
+h3::before {
+
+    content: "➤➤➤";
+
+    color: var(--bgcol);
+
+    font-size: 15px;
+
+    margin-right: 15px;
+
+}
+
+
+/* ==========================================================
+   Liens
+   ========================================================== */
+
+
+a {
+
+    color: var(--sectcol);
+
+    font-weight: 600;
+
+}
+
+
+
+a:hover {
+
+    color: var(--accent);
+
+}
+
+
+/* ==========================================================
+   Séparateurs
+   ========================================================== */
+
+
+hr {
+
+    border: none;
+
+    height: 2px;
+
+    background: var(--softcol);
+
+    margin: 35px 0;
+
+}
+
+
+/* ==========================================================
+   Bouton CV
+   ========================================================== */
+
+
+center .bouton1 {
+
+    
+display: inline-block;
+
+    padding: 10px 40px;
+
+    background: var(--sectcol);
+
+    color: var(--text-on-accent);
+
+    font-size: 18px;
+
+    transition: all 0.25s ease;
+
+
+
+}
+
+
+
+center .bouton1:hover {
+
+    background: #8066B0;
+
+color: var(--text-on-accent);
+
+transform: translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   Contact
+   ========================================================== */
+
+
+font[color="blue"] {
+
+    color: var(--sectcol);
+
+}
+
+
+
+/* ==========================================================
+   Mobile
+   ========================================================== */
+
+
+@media screen and (max-width: 800px) {
+
+
+    #titre,
+    nav,
+    .conteneur {
+
+        width: 95%;
+
+        min-width: 0;
+
+    }
+
+
+    #boite {
+
+        flex-direction: column;
+
+    }
+
+
+    #nom {
+
+        font-size: 40px;
+
+    }
+
+	footer {
+
+		padding:15px 0;
+
+		}
+
+	.logos {
+		
+		gap: 20px;
+
+		}
+
+	.logos img {
+
+		height: 50px;
+
+		}
+
+}
+
+/* ==========================================================
+   Interrupteur mode sombre
+   ========================================================== */
+
+#theme-container {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#theme-toggle {
+
+    width: 65px;
+    height: 35px;
+
+    border-radius: 20px;
+    border: none;
+
+    background: var(--sectcol);
+
+    cursor: pointer;
+
+    position: relative;
+
+    padding: 0;
+
+    transition: background-color 0.4s ease;
+}
+
+
+#theme-icon {
+
+    position: absolute;
+
+    width: 29px;
+    height: 29px;
+
+    top: 3px;
+    left: 3px;
+
+    border-radius: 50%;
+
+    background: var(--pagebg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+
+    transition:
+        transform 0.4s ease,
+        background-color 0.4s ease;
+
+}
+
+
+/* Position quand le mode sombre est activé */
+
+:root.dark #theme-icon {
+
+    transform: translateX(30px);
+
+}
+
+
+
+/* ==========================================================
+   Transitions du changement de thème
+   ========================================================== */
+
+#titre,
+h3,
+.bouton1,
+hr,
+a {
+
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        border-color 0.5s ease;
+	box-shadow 0.5s ease;
+
+}
+
+#language-toggle {
+
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    background: var(--sectcol);
+
+    color: var(--text-on-accent);
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+#language-toggle:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* ==========================================================
+   Interrupteur langue
+   ========================================================== */
+
+#language-toggle {
+
+    display: flex;
+
+    width: 65px;
+    height: 35px;
+
+    border-radius: 20px;
+
+    background: var(--sectcol);
+
+    text-decoration: none;
+
+    position: relative;
+
+    align-items: center;
+
+    padding: 0;
+
+    transition: background-color 0.4s ease;
+
+}
+
+
+#language-icon {
+
+    width: 29px;
+    height: 29px;
+
+    position: absolute;
+
+    left: 3px;
+
+    border-radius: 50%;
+
+    background: var(--pagebg);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 17px;
+
+}
+
+
+/* Etat français */
+
+#language-toggle.francais #language-icon {
+
+    animation: slide-left 0.4s ease;
+
+}
+
+
+/* Etat anglais */
+
+#language-toggle.anglais #language-icon {
+
+    transform: translateX(30px);
+
+    animation: slide-right 0.4s ease;
+
+}
+
+
+
+@keyframes slide-right {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(30px);
+    }
+
+}
+
+
+@keyframes slide-left {
+
+    from {
+        transform: translateX(30px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+/* ==========================================================
+   Listes de trucs
+   ========================================================== */
+
+.liste {
+
+    list-style: none;
+
+    padding-left: 10px;
+
+}
+
+
+.liste > li {
+
+    position: relative;
+
+    margin-bottom: 20px;
+
+    padding-left: 30px;
+
+}
+
+
+/* petite puce personnalisée */
+
+.liste > li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0.65em;
+
+    width: 12px;
+    height: 12px;
+
+    background: var(--sectcol);
+
+    border-radius: 50%;
+
+}
+
+/* ==========================================================
+   Logos
+   ========================================================== */
+
+.logos {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin: 40px 0 20px 0;
+
+}
+
+.logos img {
+
+    height: 70px;
+
+    width: auto;
+
+    transition: transform 0.25s ease;
+
+}
+
+.logos img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ==========================================================
+   Listes d'enseignement
+   ========================================================== */
+
+.enseignement {
+
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.enseignement > li {
+
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 25px;
+
+}
+
+.enseignement > li::before {
+
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    background: var(--sectcol);
+
+}
+
+.enseignement ul {
+
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 20px;
+
+}
+
+.enseignement ul li {
+
+    position: relative;
+    padding-left: 20px;
+    margin: 8px 0;
+
+}
+
+.enseignement ul li::before {
+
+    content: "▸";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--accent);
+    font-weight: bold;
+
+}
