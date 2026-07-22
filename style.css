@@ -262,6 +262,13 @@ p {
 
 }
 
+/* Image placée à la fin de la présentation */
+.image-presentation {
+    display: block;
+    width: calc(100% - 15px);
+    height: auto;
+    margin: 25px 0 25px 15px;
+}
 
 
 /* ==========================================================
